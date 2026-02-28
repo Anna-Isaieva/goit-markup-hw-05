@@ -715,6 +715,15 @@ margin-bottom: 16px;
   
   border: 1px solid rgb(46 47 66 / 40%);
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+}
+
+
+.form-input:hover,
+.form-input:focus,
+.form-input:active {
+  border: 1px solid #4D5AE5;
 }
 
 .input-icon {
@@ -722,6 +731,14 @@ margin-bottom: 16px;
   left: 19px;
   top: 50%;
   transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+}
+
+.input-icon:hover,
+.input-icon:focus,
+.input-icon:active {
+  fill: #4D5AE5;
 }
 
 .form-label {
@@ -752,5 +769,101 @@ margin-bottom: 16px;
   color: rgb(46 47 66 / 40%);
 }
 
+.field-checkbox {
+  margin-top: 16px;
+}
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+}
+
+.checkbox-box {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-icon {
+  fill: #ffffff;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-input:checked + .checkbox-box {
+  background-color: #404bbf;
+  border-color: #404bbf;
+}
+
+.checkbox-input:checked + .checkbox-box .checkbox-icon {
+  opacity: 1;
+}
+
+.checkbox-input:focus + .checkbox-box {
+  outline: 2px solid #4d5ae5;
+  outline-offset: 2px;
+}
+
+.checkbox-input {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.checkbox-label:focus-within .checkbox-box {
+  outline: 2px solid #4d5ae5;
+  outline-offset: 2px;
+}
+
+.form-button {
+  padding: 16px 32px;
+  display: block;
+  border-radius: 4px;
+  border: none;
+  margin: 24px auto;
+
+  width: 169px;
+  height: 56px;
+
+  background-color: #4D5AE5;
+  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #FFFFFF;
+  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button:active {
+  background-color: #404BBF;
+
+}

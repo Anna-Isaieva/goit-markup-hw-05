@@ -538,24 +538,33 @@
                  id="user-comment"
                  name="comment"
                  placeholder="Text input"
-                 rows="5"></textarea>
+                 rows="5">
+                </textarea>
               </div>
 
-              <div class="form-field">
-                <label class="checkbox-label">
-                  <input class="checkbox-input" type="checkbox" name="privacy" />
-                  <span class="checkbox-text">I accept the terms and conditions of the <a class="checkbox-link" href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-                  </span>
-                </label>
-              </div>
+              <div class="form-field field-checkbox">
+                <label class="checkbox-label" > 
+                  <input class="checkbox-input visually-hidden"
+                  type="checkbox" name="privacy" />
 
-              <button class="form-button" type="submit">
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
+                  <span class="checkbox-box">
+                    <svg class="checkbox-icon" width="10" height="8">
+        <use href="./images/icons.svg#icon-check"></use>
+      </svg>
+    </span>
 
-      </div>
-  </body>
+    <span class="checkbox-text">
+      I accept the terms and conditions of the
+      <a class="checkbox-link" href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    </span>
+  </label>
+</div>
+<button class="form-button" type="submit">
+  Send
+</button>
+</form>
+</div>
+</div>
+</div>
+</body>
 </html>
