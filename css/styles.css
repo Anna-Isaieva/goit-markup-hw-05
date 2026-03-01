@@ -504,11 +504,14 @@ input {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+}
+
+.footer-social {
+  margin-right: 80px;
 }
 
 .footer-brand {
-  margin-right: 0;
+  margin-right: 120px;
 }
 
 .footer-social-title {
@@ -545,8 +548,16 @@ input {
   background-color: #31D0AA;
 }
 
+.footer-subscribe {
+  margin-left: auto;
+}
+
 .subscribe-title {
 margin-bottom: 16px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
 }
 
 .footer-form {
@@ -605,7 +616,7 @@ margin-bottom: 16px;
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1,5;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   color: #FFFFFF;
@@ -688,7 +699,7 @@ margin-bottom: 16px;
   width: 24px;
   height: 24px;
 
-  background-color: #F4F4FD;
+  background-color: #E7E9FC;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
